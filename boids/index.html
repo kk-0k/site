@@ -599,10 +599,10 @@
         let width = window.innerWidth;
         let height = window.innerHeight;
 
-        //const rockImg = new Image();
+        const rockImg = new Image();
         //rockImg.src = 'image-2.png';
-        //let rockImageLoaded = false;
-        //rockImg.onload = () => { rockImageLoaded = true; };
+        let rockImageLoaded = false;
+        rockImg.onload = () => { rockImageLoaded = true; };
 
         const seaCanvas = document.createElement('canvas');
         const seaCtx = seaCanvas.getContext('2d');
